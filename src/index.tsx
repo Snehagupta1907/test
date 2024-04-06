@@ -14,6 +14,7 @@ import WebApp from '@twa-dev/sdk'
 window.Buffer = window.Buffer || Buffer;
 
 WebApp.ready();
+WebApp.expand();
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
