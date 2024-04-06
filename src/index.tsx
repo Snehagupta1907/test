@@ -7,8 +7,13 @@ import { ThemeProvider } from "./theme";
 import { store } from "./store";
 import { Buffer } from "buffer";
 import { HashConnectClient } from "./components/hashconnect/hashconnect-client";
+import WebApp from '@twa-dev/sdk'
+
+
 
 window.Buffer = window.Buffer || Buffer;
+
+WebApp.ready();
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
